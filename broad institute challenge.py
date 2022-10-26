@@ -47,6 +47,9 @@ class Stop():
 # takes in : 
     #name - String
     #stops - list of stop names
+    #count = number of stops
+    
+    #TO DO: user should not be able to change count and potentially input an incorrect number
     
 class Route():
     def __init__(self, name, stops, count):
