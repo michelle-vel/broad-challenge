@@ -60,7 +60,7 @@ def search_algorithm(stop1, stop2):
         
         #if node is not in visited - so visited must contain STOPS
         #if node is not there we need to go through that stops's lines and find if they contain the destination
-        if node not in visited_stops: #and node_lines not in visited_lines:
+        if node not in visited_stops: 
             
             #the lines of the current node
             
