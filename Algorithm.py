@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
+import requests
+import json
+from collections import defaultdict
 
 #creates adjacency graph without filtering for two or more stops
 def all_route(all_routes):
