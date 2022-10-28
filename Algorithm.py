@@ -29,13 +29,10 @@ def inverted_dict(d):
 
 #finds shortest path between two stops by using modified breadth-first-search
 def search_algorithm(stop1, stop2):
-    visited_stops = []   
-    visited_lines = []
-    
+    visited_stops = []       
     names = get_id()
     all_routes = create_dict(names)
     adjacency_list = all_route(all_routes)
-
     lines_dict = inverted_dict(adjacency_list)
     
     initial_lines = adjacency_list.get(stop1)
@@ -48,7 +45,7 @@ def search_algorithm(stop1, stop2):
     
     if s1 == None or s2 == None:
         return "invalid stops"
-
+    
     for i in s1:
         for j in s2:
             if i == j:
@@ -83,14 +80,12 @@ def search_algorithm(stop1, stop2):
                     new_path_lines = list(path_lines)
                     new_path_lines.append(i)
                     queue_lines.append(new_path_lines)
-
-                    
             
                     if neighbor == stop2:
                         return new_path_lines[1:]
                 visited_stops.append(node)
-                visited_lines.append(node_lines)
-                
-        if new_path_lines == []:
-            return "path not found"
+    
+    if new_path_lines == []:
+        return "path not found"
+
 
