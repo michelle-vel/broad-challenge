@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
 
 url_stops = "https://api-v3.mbta.com/routes?filter[type]=0,1"
 
