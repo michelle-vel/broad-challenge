@@ -34,3 +34,10 @@ Classes.py contains the Route and Stop classes used in the solution.
 Methods.py contains all the main methods used. 
 Question_1_only contains the output of Question 1.
 Question_2_only contains the output of Question 2.
+
+
+Notable design decisions:
+- when beginning to implement I decided to create two classes of Stop and Routes, where Stop contains only the name and Route contains the name of the line and a list of Stops. Creating objects was the best way for me to keep the data organized and usable for later functions.
+- I chose to filter before downloading the data because it significantly reduced the amount of data I had to loop through.
+- Created an API key to avoid being rate limited
+- For the algorithm I chose an implementation of BFS. This is because BFS in essence will reduce the number of visited edges, which aligns with the goal of having as minimial line transfers as possible. To implement I also had to create an inverted dictionary of lines : stops in order to track which lines are being taken.
