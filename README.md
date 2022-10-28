@@ -5,8 +5,8 @@ Write a program that retrieves data representing all, what we'll call "subway" r
 Partial example of long name output: Red Line, Blue Line, Orange Line...
 There are two ways to filter results for subway-only routes. Think about the two options below
 and choose:
-1. Downloadallresultsfromhttps://api-v3.mbta.com/routesthenfilterlocally
-2. RelyontheserverAPI(i.e.,https://api-v3.mbta.com/routes?filter[type]=0,1)to
+1. Download all results from https://api-v3.mbta.com/routesthenfilterlocally
+2. Rely on the server API (i.e.,https://api-v3.mbta.com/routes?filter[type]=0,1) to
 filter before results are received
 Please document your decision and your reasons for it.
 
