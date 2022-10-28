@@ -4,18 +4,20 @@
 
 url_stops = "https://api-v3.mbta.com/routes?filter[type]=0,1"
 
+#Return data function
 def get_data_routes(url):
     API_KEY = "507a3ef6cad24cf29ca83f563e63bf2a"
     r = requests.get(url, headers={"x-api-key": API_KEY})
-    ret = json.loads(r.text)    
+    if r.status_code == 400:
+        raise RuntimeError
+    ret = json.loads(r.text)   
     return ret
 
+#helper for returning data for stops
 def get_stops(name):
     request = "https://api-v3.mbta.com/stops?filter[route]={}".format(name)
     all_stops = get_data_routes(request)
     return all_stops
-
-#def error():
     
 
 #returns a list of all route IDs
