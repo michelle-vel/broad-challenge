@@ -35,7 +35,7 @@ def get_id():
 
 #returns a list of all long names
 def get_long_names():
-    ret = get_data_routes("https://api-v3.mbta.com/routes?filter[type]=0,1")    
+    ret = get_data_routes(url_stops)    
     list_names = []
     total = ret["data"]
     for i in range(len(total)):
