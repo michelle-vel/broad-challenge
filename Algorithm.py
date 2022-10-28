@@ -28,6 +28,11 @@ def inverted_dict(d):
 def search_algorithm(stop1, stop2):
     visited_stops = []   
     visited_lines = []
+    
+    names = get_id()
+    all_routes = create_dict(names)
+    adjacency_list = all_route(all_routes)
+
     lines_dict = inverted_dict(adjacency_list)
     
     initial_lines = adjacency_list.get(stop1)
