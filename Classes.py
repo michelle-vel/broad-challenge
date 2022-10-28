@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
 
 #the name of where you can board or get off an MBTA subway
 # takes in :
