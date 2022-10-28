@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
+import requests
+import json
+from collections import defaultdict
 
 
 url_stops = "https://api-v3.mbta.com/routes?filter[type]=0,1"
