@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
 #creates adjacency graph without filtering for two or more stops
 def all_route(all_routes):
     all_stops = {}
