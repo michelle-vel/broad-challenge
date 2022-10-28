@@ -83,4 +83,7 @@ def search_algorithm(stop1, stop2):
                         return new_path_lines[1:]
                 visited_stops.append(node)
                 visited_lines.append(node_lines)
+                
+        if new_path_lines == []:
+            return "path not found"
 
