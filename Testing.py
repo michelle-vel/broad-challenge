@@ -19,6 +19,8 @@ class TestModule(unittest.TestCase):
         self.assertEqual(search_algorithm("Ashmont", "Arlington"), "['Red', 'Green-C']")
         self.assertEqual(search_algorithm("Bowdoin", "Government Center"), "Blue")
         self.assertEqual(search_algorithm("Sutherland Road", "Cleveland Circle"), "['Green-B', 'Green-C']")
+        self.assertEqual(search_algorithm("hello", "Arlington"), "invalid stops")
+
 
         
 
