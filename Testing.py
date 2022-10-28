@@ -1,14 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 import unittest
-
-
-# In[5]:
-
 
 class TestModule(unittest.TestCase):
     
@@ -28,10 +21,6 @@ class TestModule(unittest.TestCase):
         self.asserEqual(search_algorithm("Sutherland Road", "Cleveland Circle"), "['Green-B', 'Green-C'])
 
         
-
-
-# In[ ]:
-
 
 
 
