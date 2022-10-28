@@ -18,7 +18,7 @@ class TestModule(unittest.TestCase):
     def test_algo(self):
         self.asserEqual(search_algorithm("Ashmont", "Arlington"), "['Red', 'Green-C']")
         self.asserEqual(search_algorithm("Bowdoin", "Government Center"), "Blue")
-        self.asserEqual(search_algorithm("Sutherland Road", "Cleveland Circle"), "['Green-B', 'Green-C'])
+        self.asserEqual(search_algorithm("Sutherland Road", "Cleveland Circle"), "['Green-B', 'Green-C']")
 
         
 
