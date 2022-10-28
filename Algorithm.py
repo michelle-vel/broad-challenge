@@ -42,6 +42,10 @@ def search_algorithm(stop1, stop2):
 
     s1 = adjacency_list.get(stop1)
     s2 = adjacency_list.get(stop2)
+    
+    if s1 == None or s2 == None:
+        return "invalid stops"
+
     for i in s1:
         for j in s2:
             if i == j:
